@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 *,
 *::after,
@@ -11,14 +11,13 @@
   --hue: 200;
   --saturation: 50%;
   --foreground-color: hsl(var(--hue), var(--saturation), 85%);
-  --background-color:#2e8b57
+  --background-color: #2e8b57;
 }
 
 body {
   margin: 0;
   background-color: var(--background-color);
   overflow: hidden;
-  
 }
 
 .paddle {
@@ -59,22 +58,19 @@ body {
   justify-content: center;
   font-weight: bold;
   font-size: 7vh;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   color: var(--foreground-color);
-
 }
 
-.score > *{
-    flex-grow: 1;
-    flex-basis: 0;
-    padding:0 2vh;
-    margin: 1vh 0;
-    opacity: .5;
-
+.score > * {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0 2vh;
+  margin: 1vh 0;
+  opacity: 0.5;
 }
 
-.score > :first-child{
-    text-align: right;
-    border-right: .5vh solid var(--foreground-color);
-    
+.score > :first-child {
+  text-align: right;
+  border-right: 0.5vh solid var(--foreground-color);
 }

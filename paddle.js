@@ -1,9 +1,9 @@
-const SPEED = .02
+const SPEED = 0.02;
 
 export default class Paddle {
   constructor(paddleElem) {
     this.paddleElem = paddleElem;
-    this.reset()
+    this.reset();
   }
 
   get position() {
@@ -16,19 +16,15 @@ export default class Paddle {
     this.paddleElem.style.setProperty("--position", value);
   }
 
-  rect(){
-      return this.paddleElem.getBoundingClientRect()
+  rect() {
+    return this.paddleElem.getBoundingClientRect();
   }
 
-  reset(){
-
-    this.position=50
+  reset() {
+    this.position = 50;
   }
 
-update(delta, ballHeight){
-    this.position += SPEED * delta * (ballHeight- this.position)
-
-
-}
-
+  update(delta, ballHeight) {
+    this.position += SPEED * delta * (ballHeight - this.position);
+  }
 }
